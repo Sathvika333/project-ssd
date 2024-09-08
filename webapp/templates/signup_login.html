@@ -1,0 +1,104 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneSpace-SignUp</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- <button style="background-color: #fff; color: black; border: 1px solid black;">GO</button> -->
+</head>
+
+<body class="page-Signup">
+    <div class="ban">
+        <div class="navbar">
+            <img src="{% static 'images/logo-no-background.png' %}" class="logo">
+        </div>
+    </div>
+    <script src="{% static 'js/signup.js' %}"></script>
+
+    <div class="materialContainer">
+
+        <!-- Register Section First -->
+        <div class="box">
+            <div class="title">REGISTER</div>
+
+            <!-- Django Form for Registration -->
+            <form method="POST" action="{% url 'signup' %}">
+                {% csrf_token %}
+
+
+                <div class="input">
+                    <label for="regemail">Email</label>
+                    <input type="email" name="regemail" id="regemail" required>
+                    <span class="spin"></span>
+                </div>
+
+                <div class="input">
+                    <label for="regpass">Password</label>
+                    <input type="password" name="regpass" id="regpass" required>
+                    <span class="spin"></span>
+                </div>
+
+
+
+                <div class="select-language-wrapper">
+                    <label for="languages" class="label-language">Languages Known</label>
+                    <select name="languages" id="languages" class="select-language">
+                        <option value="" disabled selected>Select your language</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Hindi</option>
+                        <option value="french">Telugu</option>
+                        <option value="french">Bengali</option>
+                        <option value="french">Tamil</option>
+                        <option value="french">Malyalam</option>
+                        <option value="french">Kanaada</option>
+                        <!-- Add more language options here -->
+                    </select>
+                </div>
+
+                <div class="button">
+                    <button type="submit"><span>Register</span></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Login Section Next -->
+        <div class="overbox">
+            <div class="material-button alt-2"><span class="shape"></span></div>
+
+            <div class="title">LOGIN</div>
+
+            <form method="POST" action="{% url 'login' %}">
+                {% csrf_token %}
+
+                <div class="input">
+                    <label for="logemail">Email</label>
+                    <input type="email" name="logemail" id="logemail" required>
+                    <span class="spin"></span>
+                </div>
+
+
+                <div class="input">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" required>
+                    <span class="spin"></span>
+                </div>
+
+                <div class="button login">
+                    <button type="submit"><span>GO</span> <i class="fa fa-check"></i></button>
+                </div>
+            </form>
+
+            <a href="#" class="pass-forgot">Forgot your password?</a>
+        </div>
+
+    </div>
+</body>
+
+</html>

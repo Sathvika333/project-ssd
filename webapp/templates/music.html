@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneSpace - Discover Music</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>TuneSpace</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Playlists</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Explore Your Favorite Tunes</h2>
+            <p>Discover new songs and artists that match your vibe.</p>
+            <button class="cta-btn">Start Listening</button>
+        </div>
+    </section>
+
+    <!-- Featured Music Section -->
+    <section class="featured">
+        <h3>Featured Music</h3>
+        <div class="music-container">
+            <div class="music-card">
+                <img src="music1.jpg" alt="Music Cover 1">
+                <h4>Song Title 1</h4>
+                <p>Artist Name</p>
+            </div>
+            <div class="music-card">
+                <img src="music2.jpg" alt="Music Cover 2">
+                <h4>Song Title 2</h4>
+                <p>Artist Name</p>
+            </div>
+            <div class="music-card">
+                <img src="music3.jpg" alt="Music Cover 3">
+                <h4>Song Title 3</h4>
+                <p>Artist Name</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TuneSpace. All Rights Reserved.</p>
+        <ul class="social-icons">
+            <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+            <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+            <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
