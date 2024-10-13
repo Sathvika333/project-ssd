@@ -532,3 +532,24 @@ music.addEventListener('ended', () => {
 
     }
 })
+
+// Existing music player code
+// (Your previous code here)
+
+// New user image click event listener
+document.getElementById("user-icon").addEventListener("click", function () {
+    let dropdown = document.getElementById("user-details-dropdown");
+    dropdown.classList.toggle("show");
+});
+
+window.addEventListener("click", function (event) {
+    if (!event.target.matches('#user-icon')) {
+        let dropdowns = document.getElementsByClassName("user-details");
+        for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+});

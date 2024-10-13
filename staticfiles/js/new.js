@@ -320,27 +320,6 @@ next.addEventListener('click', () => {
     wave.classList.add('active1');
 });
 
-//user icon
-
-document.addEventListener('DOMContentLoaded', () => {
-    // Get elements by their IDs
-    const userIcon = document.getElementById('user-icon'); // Ensure this ID matches the HTML
-    const userDetailsDropdown = document.getElementById('user-details-dropdown'); // Ensure this ID matches the HTML
-
-    // Add event listener to user icon
-    userIcon.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent the click event from bubbling up
-        userDetailsDropdown.classList.toggle('show'); // Toggle the show class to show/hide dropdown
-    });
-
-    // Close the dropdown if the user clicks outside of it
-    window.addEventListener('click', (event) => {
-        if (!userIcon.contains(event.target) && !userDetailsDropdown.contains(event.target)) {
-            userDetailsDropdown.classList.remove('show'); // Remove the show class to hide dropdown
-        }
-    });
-});
-
 
 
 
@@ -553,3 +532,24 @@ music.addEventListener('ended', () => {
 
     }
 })
+
+// Existing music player code
+// (Your previous code here)
+
+// New user image click event listener
+document.getElementById("user-icon").addEventListener("click", function () {
+    let dropdown = document.getElementById("user-details-dropdown");
+    dropdown.classList.toggle("show");
+});
+
+window.addEventListener("click", function (event) {
+    if (!event.target.matches('#user-icon')) {
+        let dropdowns = document.getElementsByClassName("user-details");
+        for (let i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+});

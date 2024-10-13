@@ -1361,61 +1361,39 @@ header .song_side nav .user img {
    box-shadow: 2px 2px 8px #121213;
 }
 
+/* Hide the user details dropdown by default */
 .user-details {
-   display: none; /* Hide by default */
-    position: absolute; /* Positioning */
-    right: 0; /* Position from the right */
-    top: 40px; /* Adjust this value based on your needs */
-    background-color: #fff; /* Background color */
-    border: 1px solid #ccc; /* Border style */
-    padding: 10px; /* Padding */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    z-index: 1000; /* Ensure it appears above other elements */
-}
-
-/* Styles for the user details dropdown */
-#user-details-dropdown {
-   display: none; /* Hide by default */
-   opacity: 0; /* Start fully transparent */
-   visibility: hidden; /* Hidden initially */
-   position: absolute; /* Positioning */
-   right: 10px; /* Position from the right */
-   top: 60px; /* Position from the top */
-   background-color: #fff; /* Background color */
-   border: 1px solid #ccc; /* Border style */
-   padding: 10px; /* Padding */
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-   z-index: 1000; /* Ensure it appears above other elements */
-   transition: opacity 0.3s ease, visibility 0.3s ease; /* Transition for opacity and visibility */
-}
-
-/* Show class to make it visible */
-#user-details-dropdown.show {
-   display: block; /* Use block for visibility */
-   opacity: 1; /* Fully visible */
-   visibility: visible; /* Show when active */
+   display: none;
+   position: absolute;
+   top: 100px; /* Adjust according to your layout */
+   right: 0;
+   background-color: #f9f9f9; /* Dark background for dropdown */
+   min-width: 160px;
+   padding: 10px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   z-index: 1;
 }
 
 .user-details p {
-   margin: 0; /* Remove default margin */
-   padding: 5px 0; /* Add some padding */
+   color: #fff; /* Text color */
+   margin: 0 0 10px 0;
 }
 
 .user-details a {
-   color: #007BFF; /* Link color */
-   text-decoration: none; /* Remove underline */
+   color: black;
+   padding: 8px 16px;
+   text-decoration: none;
+   display: block;
 }
 
 .user-details a:hover {
-   text-decoration: underline; /* Underline on hover */
+   background-color: #ddd;
 }
 
 .show {
-   display: block; /* Show when toggled */
+   display: block;
 }
-
-
-
 
 
 header .song_side .popular_song {
