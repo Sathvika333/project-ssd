@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login 
 
+
 from django.contrib import messages
 
 from webapp.models import UserProfile
@@ -31,11 +32,13 @@ def signup_view(request):
             return redirect('signup')
 
         # Create the user with the email as the username
-        user = User.objects.create_user(username=email, email=email, password=password)
+        user = User.objects.create_user(username=email, email=email)
+        user.set_password(password)
         user.save()
+        profile = UserProfile.objects.create(user =user,language=languages)
+        profile.save()
 
-        messages.success(request, 'Signup successful. Please log in.')
-        return redirect('login')
+        return render(request, 'signup_login.html',{"msg":'sigup successful'})
 
     return render(request, 'signup_login.html')
 
@@ -58,5 +61,10 @@ def login_view(request):
     return render(request, 'signup_login.html')
 
 def music_discovery(request):
-    return render(request, 'discover.html')  # This is your music discovery HTML template
+    user = request.user
+    return render(request, 'main.html',{'user':user})# This is your music discovery HTML template
+
+
+def arjit_playlist(request):
+    return render(request,'arjit.html') 
 

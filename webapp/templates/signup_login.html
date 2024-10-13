@@ -27,6 +27,7 @@
         <!-- Register Section First -->
         <div class="box">
             <div class="title">REGISTER</div>
+            <p>{{msg}}</p>
 
             <!-- Django Form for Registration -->
             <form method="POST" action="{% url 'signup' %}">
@@ -48,16 +49,16 @@
 
 
                 <div class="select-language-wrapper">
-                    <label for="languages" class="label-language">Languages Known</label>
-                    <select name="languages" id="languages" class="select-language">
+                    <label for="languages" class="label-language">Language preferred</label>
+                    <select name="languages" id="languages" class="select-language" aria-multiselectable="true">
                         <option value="" disabled selected>Select your language</option>
-                        <option value="english">English</option>
-                        <option value="spanish">Hindi</option>
-                        <option value="french">Telugu</option>
-                        <option value="french">Bengali</option>
-                        <option value="french">Tamil</option>
-                        <option value="french">Malyalam</option>
-                        <option value="french">Kanaada</option>
+                        <option value="english" aria-multiselectable="true">English</option>
+                        <option value="Hindi" aria-multiselectable="true">Hindi</option>
+                        <option value="Telugu" aria-multiselectable="true">Telugu</option>
+                        <option value="Bengali" aria-multiselectable="true">Bengali</option>
+                        <option value="Tamil" aria-multiselectable="true">Tamil</option>
+                        <option value="Malyalam" aria-multiselectable="true">Malyalam</option>
+                        <option value="Kanaada" aria-multiselectable="true">Kanaada</option>
                         <!-- Add more language options here -->
                     </select>
                 </div>

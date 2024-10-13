@@ -1,0 +1,455 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TuneSpace</title>
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="page-main">
+    <header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="images/1.png" alt="">
+                    <h5>On my way <br>
+                        <div clas="subtitle">
+                            Alan Walker
+                        </div>
+                    </h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>Perfect<br>
+                        <div clas="subtitle">
+                            Ed Sheeran
+                        </div>
+                    </h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>Ram siya ram<br>
+                        <div clas="subtitle">
+                            Adipursh
+                        </div>
+                    </h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="images/1.jpeg" alt="">
+                    <h5>chandsifarsih<br>
+                        <div clas="subtitle">
+                            Fana
+                        </div>
+                    </h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>Dil tu Jaan tu<br>
+                        <div clas="subtitle">
+                            Private
+                        </div>
+                    </h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>Enemy<br>
+                        <div clas="subtitle">
+                            Imagine Dragon
+                        </div>
+                    </h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="images/1.jpg" alt="">
+                    <h5>Heeriye<br>
+                        <div clas="subtitle">
+                            Dulqur
+                        </div>
+                    </h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="7"></i>
+                </li>
+                <!-- <li class="songItem">
+                    <span>08</span>
+                    <img src="images/faded.png" alt="">
+                    <h5>faded<br> <div clas="subtitle">
+                        Alan Walker
+                    </div></h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="8"></i>
+                </li> -->
+                <!-- <li class="songItem">
+                    <span>09</span>
+                    <img src="images/faded.png" alt="">
+                    <h5>faded<br> <div clas="subtitle">
+                        Alan Walker
+                    </div></h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="9"></i>
+                </li> -->
+                <!-- <li class="songItem">
+                    <span>10</span>
+                    <img src="images/faded.png" alt="">
+                    <h5>faded<br> <div clas="subtitle">
+                        Alan Walker
+                    </div></h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="10"></i>
+                </li> -->
+                <!-- <li class="songItem">
+                    <span>11</span>
+                    <img src="images/faded.png" alt="">
+                    <h5>faded<br> <div clas="subtitle">
+                        Alan Walker
+                    </div></h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="11"></i>
+                </li> -->
+                <!-- <li class="songItem">
+                    <span>12</span>
+                    <img src="images/faded.png" alt="">
+                    <h5>faded<br> <div clas="subtitle">
+                        Alan Walker
+                    </div></h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="12"></i>
+                </li> -->
+                <!-- <li class="songItem">
+                    <span>13</span>
+                    <img src="images/faded.png" alt="">
+                    <h5>faded<br> <div clas="subtitle">
+                        Alan Walker
+                    </div></h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="13"></i>
+                </li> -->
+                <!-- <li class="songItem"></li>
+                    <span>14</span>
+                    <img src="images/faded.png" alt="">
+                    <h5>faded<br> <div clas="subtitle">
+                        Alan Walker
+                    </div></h5>
+                    <i class="bi playPlaylist bi-play-circle-fill" id="14"></i>
+                </li> -->
+            </div>
+        </div>
+
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>DISCOVER <span></span></li>
+                    <li>MY SONGS</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music....">
+                    <!-- <div class = "search_results">
+                        
+                    </div> -->
+                </div>
+                <!-- <div class="user">
+                    <img src="{% static 'images/user.png' %}" alt="">
+                </div> -->
+                <div class="user">
+                    <img src="{% static 'images/user.png' %}" alt="User Icon" id="user-icon" style="cursor: pointer;">
+                    <div id="user-details-dropdown" class="user-details">
+                        <p>{{ user.email }}</p>
+                        <a href="{% url 'logout' %}">Logout</a>
+                    </div>
+                </div>
+
+
+
+
+            </nav>
+
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular songs</h4>
+                    <div class="btn_s">
+                        <i class="bi bi-arrow-left-short" id="pop_song_left"></i>
+                        <i class="bi bi-arrow-right-short" id="pop_song_right"></i>
+                    </div>
+                </div>
+
+                <div class="pop_song">
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/8.jpg" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="8"></i>
+                        </div>
+                        <h5>Inthandham<br>
+                            <div clas="subtitle">
+                                Sita Ramam
+                            </div>
+                        </h5>
+                    </li>
+
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/9.jpg" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="9"></i>
+                        </div>
+                        <h5>June Pothey<br>
+                            <div clas="subtitle">
+                                nuvela nuvela
+                            </div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/10.jpg" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>sirivennela<br>
+                            <div clas="subtitle">
+                                Shyam singha roy
+                            </div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/11.jpg" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>Yetu pone<br>
+                            <div clas="subtitle">
+                                Dear Comrade
+                            </div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/11.jpg" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>Mama choodaro<br>
+                            <div clas="subtitle">
+                                Dear comrade
+                            </div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/11.jpg" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>Gira Gira<br>
+                            <div clas="subtitle">
+                                Dear comrade
+                            </div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/11.jpg" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>Kadallale<br>
+                            <div clas="subtitle">
+                                Dear comrade
+                            </div>
+                        </h5>
+                    </li>
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/faded.png" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>faded<br>
+                             <div clas="subtitle">
+                            Alan Walker
+                        </div></h5>
+                    </li> -->
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/faded.png" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="23"></i>
+                        </div>
+                        <h5>faded<br>
+                             <div clas="subtitle">
+                            Alan Walker
+                        </div></h5>
+                    </li> -->
+                    <!-- <li class="songItem">
+                        <div class="img_play">
+                            <img src="images/faded.png" alt="">
+                            <i class="bi playPlaylist bi-play-circle-fill" id="24"></i>
+                        </div>
+                        <h5>faded<br>
+                             <div clas="subtitle">
+                            Alan Walker
+                        </div></h5>
+                    </li> -->
+                </div>
+                <div class="popular_artists">
+                    <div class="h4">
+                        <h4>Popular Artists</h4>
+                        <div class="btn_s">
+                            <i class="bi bi-arrow-left-short" id="pop_art_left"></i>
+                            <i class="bi bi-arrow-right-short" id="pop_art_right"></i>
+                        </div>
+                    </div>
+                    <div class="item Artists_bx">
+                        <li>
+                            <a href="{% url 'arjit_playlist' %}"><img src="{% static 'images/arjit.jpeg' %}" alt=""></a>
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/arjit.jpeg' %}" alt="">
+                        </li>
+
+
+
+                    </div>
+                </div>
+
+                <div class="mood_based">
+                    <div class="h4">
+                        <h4>Flavours of Music</h4>
+                        <div class="btn_s">
+                            <i class="bi bi-arrow-left-short" id="pop_mood_left"></i>
+                            <i class="bi bi-arrow-right-short" id="pop_mood_right"></i>
+                        </div>
+                    </div>
+                    <div class="item mood_bx">
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+                        <li>
+                            <img src="{% static 'images/happy-songs.png' %}" alt="">
+                        </li>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <div class="master_play">
+            <div class="wave" id="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="{% static 'images/believer.png' %}" alt="" id="poster_master_play">
+            <h5 id="title">
+                Believer
+
+                <div class="subtitle">Imagine Dragons</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+                <a href="" download id="download_music"><i class="bi bi-download"></i></a>
+            </div>
+            <span id="currentstart">0.00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentend">0.30</span>
+            <div class="vol">
+                <i class="bi bi-volume-up-fill" id="vol_icon"></i>
+                <input type="range" min="0" max="100" id="vol">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+        <!-- <audio id="myAudio" src="audio/onmyway.mp3"></audio> -->
+    </header>
+
+
+    <script src="{% static 'js/new.js' %}"></script>
+
+
+
+
+</body>
+
+</html>
