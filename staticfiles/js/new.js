@@ -63,17 +63,23 @@ const songs = [
     {
         id: 12,
         songName: 'Mama choodaro<br><div class="subtitle">Dear comrade</div>',
-        poster: "/static/images/songs_img/11.jpg"
+        poster: "/static/images/songs_img/12.jpg"
     },
     {
         id: 13,
         songName: 'Gira Gira<br><div class="subtitle">Dear comrade</div>',
-        poster: "/static/images/songs_img/11.jpg"
+        poster: "/static/images/songs_img/13.jpg"
     },
     {
         id: 14,
         songName: 'Kadallale<br><div class="subtitle">Dear comrade</div>',
-        poster: "/static/images/songs_img/11.jpg"
+        poster: "/static/images/songs_img/14.jpg"
+    },
+
+    {
+        id: 15,
+        songName: 'Oo Antava Oo Oo Anatava<br><div class="subtitle">Puspha-The RIse</div>',
+        poster: "/static/images/songs_img/15.jpg"
     }
 ]
 

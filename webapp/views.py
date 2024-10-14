@@ -66,5 +66,5 @@ def music_discovery(request):
 
 
 def arjit_playlist(request):
-    return render(request,'arjit.html') 
+    return render(request,'arjit.html')  
 

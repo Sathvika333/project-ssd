@@ -1263,8 +1263,8 @@ header .song_side {
    z-index: 2;
 }
 
-/* 
-header .song_side::before{
+
+/* header .song_side::before{
    content:'';
    position: absolute;
    width: 120%;
