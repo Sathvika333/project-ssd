@@ -58,9 +58,9 @@ const songs = [
         songName: 'Tujhe Kitna Chahne Lage<br><div class="subtitle">Kabir Singh</div>',
         poster: "/static/images/arjit/11.jpg"
     },
-    
-   
-    
+
+
+
 ]
 
 
@@ -378,6 +378,148 @@ pop_mood_left.addEventListener('click', () => {
 
 
 
+// let shuffle = document.getElementsByClassName('shuffle')[0];
+
+// shuffle.addEventListener('click', () => {
+//     let a = shuffle.innerHTML;
+
+//     switch (a) {
+//         case "next":
+//             shuffle.classList.add('bi-arrow-repeat');
+//             shuffle.classList.remove('bi-music-note-beamed');
+//             shuffle.classList.remove('bi-shuffle');
+//             shuffle.innerHTML = 'repeat';
+//             break;
+
+//         case "repeat":
+//             shuffle.classList.remove('bi-arrow-repeat');
+//             shuffle.classList.remove('bi-music-note-beamed');
+//             shuffle.classList.add('bi-shuffle');
+//             shuffle.innerHTML = 'random';
+//             break;
+//         case "random":
+//             shuffle.classList.remove('bi-arrow-repeat');
+//             shuffle.classList.add('bi-music-note-beamed');
+//             shuffle.classList.remove('bi-shuffle');
+//             shuffle.innerHTML = 'next';
+//             break;
+//     }
+// });
+
+
+
+
+// const next_music = () => {
+//     if (index == songs.length) {
+//         index = 1
+//     } else {
+//         index++;
+//     }
+//     music.src = `/static/audio/arjit/${index}.mp3`;
+//     poster_master_play.src = `/static/images/arjit/${index}.jpg`
+//     music.play();
+//     masterPlay.classList.remove("bi-play-fill");
+//     masterPlay.classList.add("bi-pause-fill");
+//     download_music.href = `/static/audio/arjit/${index}.mp3`;
+
+//     let songTitles = songs.filter((els) => {
+//         return els.id == index;
+//     });
+
+//     songTitles.forEach(elss => {
+//         let { songName } = elss;
+//         title.innerHTML = songName;
+//         download_music.setAttribute('download', songName);
+//     });
+
+//     makeAllBackground();
+//     Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = "rgb(105, 105, 105, .1)"
+//     makeAllplays();
+//     el.target.classList.remove('bi-play-circle-fill');
+//     el.target.classList.add('bi-pause-circle-fill');
+//     wave.classList.add('active1');
+// }
+
+
+
+// const repeat_music = () => {
+//     index;
+//     music.src = `/static/audio/arjit/${index}.mp3`;
+//     poster_master_play.src = `/static/images/arjit/${index}.jpg`
+//     music.play();
+//     masterPlay.classList.remove("bi-play-fill");
+//     masterPlay.classList.add("bi-pause-fill");
+//     download_music.href = `static/audio/arjit/${index}.mp3`;
+
+//     let songTitles = songs.filter((els) => {
+//         return els.id == index;
+//     });
+
+//     songTitles.forEach(elss => {
+//         let { songName } = elss;
+//         title.innerHTML = songName;
+//         download_music.setAttribute('download', songName);
+//     });
+
+//     makeAllBackground();
+//     Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = "rgb(105, 105, 105, .1)"
+//     makeAllplays();
+//     el.target.classList.remove('bi-play-circle-fill');
+//     el.target.classList.add('bi-pause-circle-fill');
+//     wave.classList.add('active1');
+// }
+
+
+// const random_music = () => {
+//     if (index == songs.length) {
+//         index = 1
+//     } else {
+//         index = Math.floor((Math.random() * songs.length) + 1);
+//     }
+//     music.src = `/static/audio/arjit/${index}.mp3`;
+//     poster_master_play.src = `/static/images/arjit/${index}.jpg`
+//     music.play();
+//     masterPlay.classList.remove("bi-play-fill");
+//     masterPlay.classList.add("bi-pause-fill");
+//     download_music.href = `/static/audio/arjit/${index}.mp3`;
+
+//     let songTitles = songs.filter((els) => {
+//         return els.id == index;
+//     });
+
+//     songTitles.forEach(elss => {
+//         let { songName } = elss;
+//         title.innerHTML = songName;
+//         download_music.setAttribute('download', songName);
+//     });
+
+//     makeAllBackground();
+//     Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = "rgb(105, 105, 105, .1)"
+//     makeAllplays();
+//     el.target.classList.remove('bi-play-circle-fill');
+//     el.target.classList.add('bi-pause-circle-fill');
+//     wave.classList.add('active1');
+// }
+
+
+// music.addEventListener('ended', () => {
+//     let b = shuffle.innerHTML;
+
+//     switch (b) {
+//         case 'repeat':
+//             repeat_music();
+//             break;
+//         case 'next':
+//             next_music();
+//             break;
+//         case 'random':
+//             random_music();
+//             break;
+
+//     }
+// })
+
+
 let shuffle = document.getElementsByClassName('shuffle')[0];
 
 shuffle.addEventListener('click', () => {
@@ -449,7 +591,7 @@ const repeat_music = () => {
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
-    download_music.href = `static/audio/arjit/${index}.mp3`;
+    download_music.href = `/static/audio/arjit/${index}.mp3`;
 
     let songTitles = songs.filter((els) => {
         return els.id == index;
@@ -518,6 +660,8 @@ music.addEventListener('ended', () => {
 
     }
 })
+
+
 
 // Existing music player code
 // (Your previous code here)

@@ -1,0 +1,89 @@
+[
+    {
+        "song_name": "On my way",
+        "artist": "Alan Walker",
+        "poster": "/static/images/songs_img/1.jpg",
+        "audio_file": "/static/audio/1.mp3"
+    },
+    {
+        "song_name": "Perfect",
+        "artist": "Ed Sheeran",
+        "poster": "/static/images/songs_img/2.jpg",
+        "audio_file": "/static/audio/2.mp3"
+    },
+    {
+        "song_name": "Ram siya ram",
+        "artist": "Adipursh",
+        "poster": "/static/images/songs_img/3.jpg",
+        "audio_file": "/static/audio/3.mp3"
+    },
+    {
+        "song_name": "chandsifarsih",
+        "artist": "Fana",
+        "poster": "/static/images/songs_img/4.jpg",
+        "audio_file": "/static/audio/4.mp3"
+    },
+    {
+        "song_name": "Dil tu Jaan tu",
+        "artist": "Private",
+        "poster": "/static/images/songs_img/5.jpg",
+        "audio_file": "/static/audio/5.mp3"
+    },
+    {
+        "song_name": "Enemy",
+        "artist": "Imagine Dragon",
+        "poster": "/static/images/songs_img/6.jpg",
+        "audio_file": "/static/audio/6.mp3"
+    },
+    {
+        "song_name": "Heeriye",
+        "artist": "Dulqur",
+        "poster": "/static/images/songs_img/7.jpg",
+        "audio_file": "/static/audio/7.mp3"
+    },
+    {
+        "song_name": "Inthandham",
+        "artist": "Sita Ramam",
+        "poster": "/static/images/songs_img/8.jpg",
+        "audio_file": "/static/audio/8.mp3"
+    },
+    {
+        "song_name": "June Pothey",
+        "artist": "nuvela nuvela",
+        "poster": "/static/images/songs_img/9.jpg",
+        "audio_file": "/static/audio/9.mp3"
+    },
+    {
+        "song_name": "sirivennela",
+        "artist": "Shyam singha roy",
+        "poster": "/static/images/songs_img/10.jpg",
+        "audio_file": "/static/audio/10.mp3"
+    },
+    {
+        "song_name": "Yetu pone",
+        "artist": "Dear Comrade",
+        "poster": "/static/images/songs_img/11.jpg",
+        "audio_file": "/static/audio/11.mp3"
+    },
+    {
+        "song_name": "Mama choodaro",
+        "artist": "Dear Comrade",
+        "poster": "/static/images/songs_img/12.jpg",
+        "audio_file": "/static/audio/12.mp3"
+    },
+    {
+        "song_name": "Gira Gira",
+        "artist": "Dear Comrade",
+        "poster": "/static/images/songs_img/13.jpg",
+        "audio_file": "/static/audio/13.mp3"
+    },
+    {
+        "song_name": "Kadallale",
+        "artist": "Dear Comrade",
+        "poster": "/static/images/songs_img/14.jpg",
+        "audio_file": "/static/audio/14.mp3"
+    }
+    
+       
+]
+

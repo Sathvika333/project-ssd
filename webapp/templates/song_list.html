@@ -1,0 +1,24 @@
+<!-- templates/myapp/song_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Song List</title>
+</head>
+<body>
+    <h1>Song List</h1>
+    <ul>
+        {% for song in songs %}
+            <li>
+                <img src="{{ song.poster }}" alt="{{ song.title }}" width="100">
+                <strong>{{ song.title }}</strong> by {{ song.artist }}
+                <audio controls>
+                    <source src="{{ song.audio_file }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1512,7 +1512,7 @@ header .song_side .popular_song .pop_song li h5 .subtitle {
 }
 
 header .song_side .popular_artists {
-   width: 90%;
+   width: 140%;
    height: auto;
    /* border: 1px solid #fff; */
    margin: auto;
@@ -1570,7 +1570,7 @@ header .song_side .popular_artists .item li img {
 
 
 header .song_side .mood_based {
-   width: 90%;
+   width: 140%;
    height: auto;
    /* border: 1px solid #fff; */
    margin: auto;

@@ -68,3 +68,14 @@ def music_discovery(request):
 def arjit_playlist(request):
     return render(request,'arjit.html')  
 
+
+
+# myapp/views.py
+
+from django.shortcuts import render
+from .models import Song
+
+def song_list(request):
+    # Fetch all songs from the database
+    songs = Song.objects.all()
+    return render(request, 'song_list.html', {'songs': songs})

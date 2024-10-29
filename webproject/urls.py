@@ -29,5 +29,6 @@ urlpatterns = [
     path('music_discovery/', views.music_discovery, name='music_discovery'),  # Updated name
     path('arjit_playlist/',views.arjit_playlist, name='arjit_playlist'),
      path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+     path('songs/', views.song_list, name='song_list'), 
 ]
 
