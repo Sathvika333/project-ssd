@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f6f7fafd;
+}
+
+.my-songs-page {
+    padding: 20px;
+}
+
+.my-songs-page h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.my-songs-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.song-item {
+    width: 120px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.song-item .img-play {
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.song-item .img-play img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.song-item h5 {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.song-item .subtitle {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.audio-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #282828;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+audio {
+    width: 90%;
+}

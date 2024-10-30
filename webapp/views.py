@@ -79,3 +79,6 @@ def song_list(request):
     # Fetch all songs from the database
     songs = Song.objects.all()
     return render(request, 'song_list.html', {'songs': songs})
+
+def my_songs(request):
+    return render(request,'my_songs.html') 

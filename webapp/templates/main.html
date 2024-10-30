@@ -20,6 +20,7 @@
                 <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
                 <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
             </div>
+            
             <div class="menu_song">
                 <li class="songItem">
                     <span>01</span>
@@ -29,6 +30,7 @@
                             Alan Walker
                         </div>
                     </h5>
+                    <i class="bi bi-plus-circle add-to-playlist" id="1" title="Add to My Songs"></i>
                     <i class="bi playPlaylist bi-play-circle-fill" id="1"></i>
                 </li>
                 <li class="songItem">
@@ -39,6 +41,7 @@
                             Ed Sheeran
                         </div>
                     </h5>
+                    <i class="bi bi-plus-circle add-to-playlist" id="2" title="Add to My Songs"></i>
                     <i class="bi playPlaylist bi-play-circle-fill" id="2"></i>
                 </li>
                 <li class="songItem">
@@ -49,6 +52,7 @@
                             Adipursh
                         </div>
                     </h5>
+                    <i class="bi bi-plus-circle add-to-playlist" id="3" title="Add to My Songs"></i>
                     <i class="bi playPlaylist bi-play-circle-fill" id="3"></i>
                 </li>
                 <li class="songItem">
@@ -59,6 +63,7 @@
                             Fana
                         </div>
                     </h5>
+                    <i class="bi bi-plus-circle add-to-playlist" id="4" title="Add to My Songs"></i>
                     <i class="bi playPlaylist bi-play-circle-fill" id="4"></i>
                 </li>
                 <li class="songItem">
@@ -69,6 +74,7 @@
                             Private
                         </div>
                     </h5>
+                    <i class="bi bi-plus-circle add-to-playlist" id="5" title="Add to My Songs"></i>
                     <i class="bi playPlaylist bi-play-circle-fill" id="5"></i>
                 </li>
                 <li class="songItem">
@@ -79,6 +85,7 @@
                             Imagine Dragon
                         </div>
                     </h5>
+                    <i class="bi bi-plus-circle add-to-playlist" id="6" title="Add to My Songs"></i>
                     <i class="bi playPlaylist bi-play-circle-fill" id="6"></i>
                 </li>
                 <li class="songItem">
@@ -89,6 +96,7 @@
                             Dulqur
                         </div>
                     </h5>
+                    <i class="bi bi-plus-circle add-to-playlist" id="7" title="Add to My Songs"></i>
                     <i class="bi playPlaylist bi-play-circle-fill" id="7"></i>
                 </li>
 
@@ -178,7 +186,8 @@
             <nav>
                 <ul>
                     <li>DISCOVER <span></span></li>
-                    <li>MY SONGS</li>
+                    <li><a href="{% url 'my_songs' %}">MY SONGS</a></li>
+                
                 </ul>
                 <div class="search">
                     <i class="bi bi-search"></i>
@@ -213,17 +222,16 @@
                 </div>
 
                 <div class="pop_song">
-
                     <li class="songItem">
                         <div class="img_play">
                             <img src="images/8.jpg" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="8"></i>
                         </div>
-                        <h5>Inthandham<br>
-                            <div clas="subtitle">
-                                Sita Ramam
-                            </div>
-                        </h5>
+                        <i class="bi bi-plus-square" id="8" title="add to my songs"></i>
+                        <h5>Inthandham
+                            <br>
+                            <span class="subtitle">SitaRamam</span>
+                            </h5>
                     </li>
 
                     <li class="songItem">
@@ -231,6 +239,7 @@
                             <img src="images/9.jpg" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="9"></i>
                         </div>
+                        <i class="bi bi-plus-square" id="9" title="add to my songs"></i>
                         <h5>June Pothey<br>
                             <div clas="subtitle">
                                 nuvela nuvela
@@ -242,6 +251,7 @@
                             <img src="images/10.jpg" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="10"></i>
                         </div>
+                        <i class="bi bi-plus-square" id="10" title="add to my songs"></i>
                         <h5>sirivennela<br>
                             <div clas="subtitle">
                                 Shyam singha roy
@@ -253,6 +263,7 @@
                             <img src="images/11.jpg" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="11"></i>
                         </div>
+                        <i class="bi bi-plus-square" id="11" title="add to my songs"></i>
                         <h5>Yetu pone<br>
                             <div clas="subtitle">
                                 Dear Comrade
@@ -264,6 +275,7 @@
                             <img src="images/12.jpg" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="12"></i>
                         </div>
+                        <i class="bi bi-plus-square" id="12" title="add to my songs"></i>
                         <h5>Mama choodaro<br>
                             <div clas="subtitle">
                                 Dear comrade
@@ -275,6 +287,7 @@
                             <img src="images/13.jpg" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="13"></i>
                         </div>
+                        <i class="bi bi-plus-square" id="13" title="add to my songs"></i>
                         <h5>Gira Gira<br>
                             <div clas="subtitle">
                                 Dear comrade
@@ -286,6 +299,7 @@
                             <img src="images/14.jpg" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="14"></i>
                         </div>
+                        <i class="bi bi-plus-square" id="14" title="add to my songs"></i>
                         <h5>Kadallale<br>
                             <div clas="subtitle">
                                 Dear comrade
@@ -297,6 +311,7 @@
                             <img src="images/faded.png" alt="">
                             <i class="bi playPlaylist bi-play-circle-fill" id="15"></i>
                         </div>
+                        <i class="bi bi-plus-square" id="15" title="add to my songs"></i>
                         <h5>faded<br>
                              <div clas="subtitle">
                             Alan Walker 

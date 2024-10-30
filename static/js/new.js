@@ -559,3 +559,50 @@ window.addEventListener("click", function (event) {
         }
     }
 });
+
+
+
+// add song to mysongs
+
+// Select all elements with class 'add-to-playlist' and add event listener
+document.querySelectorAll('.add-to-playlist').forEach(button => {
+    button.addEventListener('click', () => {
+        const songId = parseInt(button.id); // Get the song ID from the button's ID attribute
+        addSongToMySongs(songId);
+    });
+});
+
+// Function to add song to "My Songs" list
+function addSongToMySongs(songId) {
+    const song = songs.find(s => s.id === songId);
+    if (song) {
+        const mySongsContainer = document.getElementById('mySongsList');
+
+        // Create the HTML for the new song item in "My Songs"
+        const songItem = document.createElement('li');
+        songItem.className = 'songItem';
+        songItem.innerHTML = `
+            <span>${songId.toString().padStart(2, '0')}</span>
+            <img src="${song.poster}" alt="">
+            <h5>${song.songName}</h5>
+            <i class="bi playPlaylist bi-play-circle-fill" data-song-id="${song.id}"></i>
+        `;
+
+        // Add to "My Songs" container
+        mySongsContainer.appendChild(songItem);
+
+        // Attach click event to play song in "My Songs" list
+        songItem.querySelector('.playPlaylist').addEventListener('click', () => playSongById(song.id));
+    }
+}
+
+
+function playSongById(songId) {
+    const song = songs.find(s => s.id === songId);
+    if (song) {
+        music.src = `/static/audio/${song.id}.mp3`;  // Update with the correct path for each song
+        music.play();
+    } else {
+        console.error('Song not found');
+    }
+}

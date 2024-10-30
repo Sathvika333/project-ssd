@@ -996,11 +996,19 @@ header .menu_side .menu_song li h5 .subtitle {
 
 
 header .menu_side .menu_song li .bi {
-   position: absolute;
+   position: relative;
    right: 15px;
    font-size: 16px;
-   top: 6px;
+   top: 15px;
 }
+
+ header .menu_side .menu_song li .add-to-playlist {
+   position: relative;
+   right: 25px; 
+   font-size: 16px;
+   color: white;
+   cursor: pointer;
+} 
 
 header .master_play {
    display: flex;
@@ -1455,10 +1463,25 @@ header .song_side .popular_song .pop_song::-webkit-scrollbar {
 
 header .song_side .popular_song .pop_song li {
    min-width: 100px;
-   height: 140px;
-   list-style-type: none;
-   margin-right: 10px;
-   transition: .3s linear;
+    height: auto;
+    list-style-type: none;
+    margin-right: 10px;
+    transition: .3s linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header .song_side .popular_song .pop_song li .bi-plus-square {
+   margin-bottom: 0px;
+    color: #f6f7faf3;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+header .song_side .popular_song .pop_song li:hover .bi-plus-square {
+   opacity: 1;
 }
 
 
@@ -1494,21 +1517,21 @@ header .song_side .popular_song .pop_song li:hover .img_play .bi {
 }
 
 header .song_side .popular_song .pop_song li h5 {
-   padding: 5px 0px 0px 5px;
-   line-height: 15px;
-   font-size: 10px;
-   width: 100px;
-   overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
+   padding: 5px 0 0;
+    line-height: 1.0;
+    font-size: 10px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header .song_side .popular_song .pop_song li h5 .subtitle {
    font-size: 9px;
-   overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-   color: #4c5262;
+    color: #4c5262;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 header .song_side .popular_artists {

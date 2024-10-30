@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Songs - TuneSpace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="my-songs-page">
+        <h2>My Songs</h2>
+        <ul class="my-songs-list">
+            <!-- Each song item -->
+            <li class="song-item" data-song-url="path_to_song_file_1.mp3">
+                <div class="img-play">
+                    <img src="images/song1.jpg" alt="Song Image">
+                    <i class="bi bi-play-circle-fill play-button"></i>
+                </div>
+                <h5>Song Title 1<br>
+                    <span class="subtitle">Artist Name</span>
+                </h5>
+            </li>
+            <li class="song-item" data-song-url="path_to_song_file_2.mp3">
+                <div class="img-play">
+                    <img src="images/song2.jpg" alt="Song Image">
+                    <i class="bi bi-play-circle-fill play-button"></i>
+                </div>
+                <h5>Song Title 2<br>
+                    <span class="subtitle">Artist Name</span>
+                </h5>
+            </li>
+            <!-- Add more songs as needed -->
+        </ul>
+
+        <!-- Audio Player at the bottom -->
+        <div class="audio-player">
+            <audio id="audioPlayer" controls>
+                <source id="audioSource" src="" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
